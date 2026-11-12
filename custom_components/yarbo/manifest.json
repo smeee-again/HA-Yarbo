@@ -3,10 +3,10 @@
   "name": "Yarbo",
   "codeowners": ["@smeee-again"],
   "config_flow": true,
-  "documentation": "https://github.com/YOUR_GITHUB_USER/ha-yarbo",
+  "documentation": "https://github.com/smeee-again/ha-yarbo",
   "integration_type": "hub",
   "iot_class": "cloud_push",
-  "issue_tracker": "https://github.com/YOUR_GITHUB_USER/ha-yarbo/issues",
+  "issue_tracker": "https://github.com/smeee-again/ha-yarbo/issues",
   "requirements": ["yarbo-data-sdk==0.3.0"],
   "version": "0.1.0"
 }
