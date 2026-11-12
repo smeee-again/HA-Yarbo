@@ -1,0 +1,40 @@
+start_plan:
+  target:
+    entity:
+      integration: yarbo
+      domain: lawn_mower
+  fields:
+    plan_id:
+      required: true
+      example: 1
+      selector:
+        number:
+          min: 0
+          max: 9999
+          mode: box
+    start_percent:
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 100
+          unit_of_measurement: "%"
+          mode: slider
+
+send_command:
+  target:
+    entity:
+      integration: yarbo
+      domain: lawn_mower
+  fields:
+    command:
+      required: true
+      example: wireless_charging_cmd
+      selector:
+        text:
+    payload:
+      required: false
+      example: '{"cmd": 1}'
+      selector:
+        object:

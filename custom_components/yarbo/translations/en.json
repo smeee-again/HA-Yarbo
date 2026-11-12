@@ -1,0 +1,61 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Yarbo account",
+        "description": "Sign in with the email and password you use in the Yarbo app.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Yarbo",
+        "description": "The Yarbo login for {username} is no longer valid. Enter the current password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not reach the Yarbo cloud.",
+      "no_devices": "No Yarbo robots were found on this account.",
+      "unknown": "Unexpected error. Check the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This Yarbo account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "services": {
+    "start_plan": {
+      "name": "Start plan",
+      "description": "Starts an automatic plan stored on the robot.",
+      "fields": {
+        "plan_id": {
+          "name": "Plan ID",
+          "description": "ID of the plan (see the Plan select entity or Refresh Plans)."
+        },
+        "start_percent": {
+          "name": "Start percent",
+          "description": "Optional point in the plan to start from, 0-100."
+        }
+      }
+    },
+    "send_command": {
+      "name": "Send command",
+      "description": "Publishes a raw command topic to the robot. Use for commands without a dedicated entity. Some commands change safety settings.",
+      "fields": {
+        "command": {
+          "name": "Command",
+          "description": "Command topic name, e.g. wireless_charging_cmd."
+        },
+        "payload": {
+          "name": "Payload",
+          "description": "Command payload object."
+        }
+      }
+    }
+  }
+}
