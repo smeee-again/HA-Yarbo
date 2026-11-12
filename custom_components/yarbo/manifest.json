@@ -1,7 +1,7 @@
 {
   "domain": "yarbo",
   "name": "Yarbo",
-  "codeowners": ["@YOUR_GITHUB_USER"],
+  "codeowners": ["@smeee-again"],
   "config_flow": true,
   "documentation": "https://github.com/YOUR_GITHUB_USER/ha-yarbo",
   "integration_type": "hub",
