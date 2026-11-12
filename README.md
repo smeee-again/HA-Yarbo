@@ -8,11 +8,9 @@ over MQTT, so there is no polling.
 
 ## Install
 
-1. Replace `YOUR_GITHUB_USER` in `custom_components/yarbo/manifest.json` and publish this
-   repo to GitHub.
-2. HACS -> Integrations -> ⋮ -> **Custom repositories** -> add the repo URL, category *Integration*.
-3. Install **Yarbo**, restart Home Assistant.
-4. Settings -> Devices & services -> **Add integration** -> *Yarbo*.
+1. HACS -> Integrations -> ⋮ -> **Custom repositories** -> add the repo URL, category *Integration*.
+2. Install **Yarbo**, restart Home Assistant.
+3. Settings -> Devices & services -> **Add integration** -> *Yarbo*.
 
 Requires Home Assistant 2024.11 or newer.
 
