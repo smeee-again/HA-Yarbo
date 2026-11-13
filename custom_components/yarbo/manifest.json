@@ -1,6 +1,9 @@
 {
   "domain": "yarbo",
   "name": "Yarbo",
+  "categories": [
+    "garden_plants"
+  ],
   "codeowners": ["@smeee-again"],
   "config_flow": true,
   "documentation": "https://github.com/smeee-again/ha-yarbo",
@@ -8,5 +11,5 @@
   "iot_class": "cloud_push",
   "issue_tracker": "https://github.com/smeee-again/ha-yarbo/issues",
   "requirements": ["yarbo-data-sdk==0.3.0"],
-  "version": "0.1.0"
+  "version": "0.0.4"
 }
